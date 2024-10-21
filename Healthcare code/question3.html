@@ -1,0 +1,149 @@
+!<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Survey</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://www.wallpapertip.com/wmimgs/6-64864_smoke-wallpapers-data-src-beautiful-cool-smoke-backgrounds.jpg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2fbde0;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smoking</h1>
+
+        <div class="question">
+            <label for="hospital">1.Do you currently smoke tobacco products?</label>
+            <input type="radio" name="smoke" value="Yes,regularly"> Yes,regularly
+            <input type="radio" name="smoke" value="Occasionally"> Occasionally
+            <input type="radio" name="smoke" value="Never"> Never 
+            
+        </div>
+        
+        <div class="question">
+            <label for="treatment">2.If you smoke,how many cigarettes or tobacco products do you consume on an average day? </label>
+            <input type="radio" name="Health" value="1-5"> 1-5
+            <input type="radio" name="Health" value="6-10"> 6-10
+            <input type="radio" name="Health" value="11-20"> 11-20
+            <input type="radio" name="Health" value="More than 20"> More than 20
+           
+        </div>
+        
+        <div class="question">
+            <label for="doctors">3.How long have you been smoking?</label>
+            <input type="radio" name="smokee" value="Less than 6months"> Less than 6months
+            <input type="radio" name="smokee" value="6months-1year"> 6months-1year
+            <input type="radio" name="smokee" value="1-5year"> 1-5year
+            <input type="radio" name="smokee" value="more than 5years"> More than 5years
+           
+        </div>
+        
+        <div class="question">
+             <label for="comments">4.What is the reason for smoking?</label> 
+            <input type="radio" name="reason" value="Stress relief"> Stress relief
+            <input type="radio" name="reason" value="Social reasons"> Social Reasons
+            <input type="radio" name="reason" value="Addiction"> Addiction
+            <input type="radio" name="reason" value="Enjoyment pleasure"> Enjoyment/Pleasure
+            
+        </div>
+        <div class="question">
+            <label for="doctors">5.Have you ever tried to quit smoking?</label>
+            <input type="radio" name="quit" value="Yes,Successfully"> Yes,successfully
+            <input type="radio" name="quit" value="Yes,Unsuccessfully"> Yes,Unsuccessfully
+            <input type="radio" name="quit" value="No never tried"> No never tried       
+        </div>
+        <div class="question">
+            <label for="doctors">6. Are you aware of the health risks associated with smoking? </label>
+            <input type="radio" name="risks" value="Very aware">Very aware
+            <input type="radio" name="risks" value="Somewhat aware"> Somewhat aware 
+            <input type="radio" name="risks" value="Not very aware"> Not very aware
+            <input type="radio" name="risks" value="Not at all"> Not at all
+           
+        </div>
+        <div class="question">
+            <label for="doctors">7.Do you have a support system for quitting smoking?</label>
+            <input type="radio" name="Smokingg" value="From family/Friends"> From family/Friends
+            <input type="radio" name="Smokingg" value="Support Group"> Support Group
+            <input type="radio" name="Smokingg" value="NO,don't have any support"> No,don't have any support
+         </div>
+        <div class="question">
+            <label for="doctors">8.Have you tried any alternative methods to quit smoking? (e.g.nicotine replacement therapy, counseling)?</label>
+            <input type="radio" name="methods" value="Yes,and it helped"> Yes, and it helped
+            <input type="radio" name="methods" value="Yes,but it didn't help"> Yes, but it didn't help
+            <input type="radio" name="methods" value="No,I haven't tried any"> No, I haven't tried any
+           
+        </div>
+        <div class="question">
+            <label for="doctors">9.Do you think stricter smoking-related policies (e.g.higher taxes, smoking bans) would influence your smoking habits??</label>
+            <input type="radio" name="policies" value="Yes,positively">  Yes, positively
+            <input type="radio" name="policies" value="Yes,negatively"> Yes, negatively
+            <input type="radio" name="policies" value="No,it wouldn't make a difference"> No, it wouldn't make a difference
+           
+        </div>
+        <div class="question">
+            <label for="doctors">10.Where do you primarily get information about the risks of smoking and quitting methods?</label>
+            <input type="radio" name="smoking-related" value="Healthcare professionals"> Healthcare professionals
+            <input type="radio" name="smoking-related" value="Media (TV, newspapers, online articles)"> Media (TV, newspapers, online articles)
+            <input type="radio" name="smoking-related" value="social media"> Social media
+            <input type="radio" name="smoking-related" value="Friends and family"> Friends and family
+           
+        </div>
+        <div class="question">
+            <label for="comments">Any additional comment?</label>
+        
+        <textarea name="comments" rows="4"></textarea>
+
+        <button type="submit" onclick="location.href='submit.html'">Submit</button>
+    </div>
+
+</body>
+</html>

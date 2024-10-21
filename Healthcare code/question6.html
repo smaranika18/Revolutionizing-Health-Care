@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Survey</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://tse3.mm.bing.net/th?id=OIP.eORPfXkrj18uFkGmH42upAHaDm&pid=Api&P=0&h=180.jpg);
+        body {
+  height: 100vh;
+  width: 100%;
+  background: url(gradient.jpg)
+    center/cover no-repeat;
+}
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2fbde0;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hospital Performance</h1>
+
+        <div class="question">
+            <label for="hospital">1. How would you rate the overall friendliness and helpfulness of hospital staff during your visit?</label>
+            <input type="radio" name="hospital" value="Not at all healthy"> Excellent
+            <input type="radio" name="hospital" value="Extremely Healthy"> Good
+            <input type="radio" name="hospital" value="Extremely Healthy"> Average
+            <input type="radio" name="hospital" value="Extremely Healthy"> Poor
+        </div>
+
+        <div class="question">
+            <label for="treatment">2.Did hospital staff effectively communicate information about your condition and treatment plan? </label>
+            <input type="radio" name="treatment" value="Extremely oftrn">Yes, very effectively
+            <input type="radio" name="treatment" value="somewhat often"> Yes, somewhat effectively 
+            <input type="radio" name="treatment" value="Not so often"> No, not very effectively
+            <input type="radio" name="treatment" value="Not so often">No, not at all effectively
+        </div>
+
+        <div class="question">
+            <label for="doctors">3. How satisfied were you with the wait times in the hospital, including waiting for appointments, tests, and results?</label>
+            <input type="radio" name="treatment" value="Extremely oftrn">Very satisfied
+            <input type="radio" name="treatment" value="somewhat often"> Satisfied   
+            <input type="radio" name="treatment" value="somewhat often"> Neutral
+            <input type="radio" name="treatment" value="somewhat often">Dissatisfied
+        </div>
+
+        <div class="question">
+             <label for="comments">4.How would you rate the cleanliness and sanitation of the hospital facilities?</label> 
+            <input type="radio" name="doctors" value="Extremely"> Excellent
+            <input type="radio" name="doctors" value="Not much"> Good
+            <input type="radio" name="doctors" value="Extremely"> Average
+            <input type="radio" name="doctors" value="Not much"> Poor 
+        </div>
+        <div class="question">
+            <label for="doctors">5. How satisfied are you with the quality of the hospital's facilities and equipment?</label>
+            <input type="radio" name="doctors" value="Not much"> Very satisfied
+            <input type="radio" name="doctors" value="Extremely"> Satisfied
+            <input type="radio" name="doctors" value="Extremely"> Neutral
+            <input type="radio" name="doctors" value="Other"> Dissatisfied
+        </div>
+        <div class="question">
+            <label for="doctors">6.Did you feel that your care was well-coordinated among different departments and healthcare professionals within the hospital? </label>
+            <input type="radio" name="doctors" value="Not much"> Yes, very well-coordinated 
+            <input type="radio" name="doctors" value="Extremely"> Yes, somewhat well-coordinated 
+            <input type="radio" name="doctors" value="Extremely"> No, not very well-coordinated
+            <input type="radio" name="doctors" value="Other"> No, not at all well-coordinated
+           
+        </div>
+        <div class="question">
+            <label for="doctors">7.How easy was it for you to access information about your medical records, test results, and treatment plans?
+        </label>
+            <input type="radio" name="doctors" value="Not much"> Very easy
+            <input type="radio" name="doctors" value="Extremely"> Somewhat easy   
+            <input type="radio" name="doctors" value="Extremely"> Neutral 
+            <input type="radio" name="doctors" value="Extremely"> Very difficult 
+        </div> 
+        <div class="question">
+            <label for="doctors">8.Were you made aware of and comfortable with the patient safety measures in place, including infection control and medication safety?</label>
+            <input type="radio" name="doctors" value="Not much">Yes, very comfortable
+            <input type="radio" name="doctors" value="Extremely"> Yes, somewhat comfortable
+            <input type="radio" name="doctors" value="Not much"> No, not very comfortable
+            <input type="radio" name="doctors" value="Not much">No, not at all comfortable
+        </div>
+        <div class="question">
+            <label for="doctors">9.Did you feel actively involved in decisions about your care and treatment within the hospital?</label>
+            <input type="radio" name="doctors" value="Not much"> Yes, very involved  
+            <input type="radio" name="doctors" value="Extremely">Yes, somewhat involved 
+            <input type="radio" name="doctors" value="Not much">No, not very involved 
+            <input type="radio" name="doctors" value="Not much">No, not at all involved
+        </div>
+        <div class="question">
+            <label for="doctors">10. How satisfied were you with the hospital's follow-up care after your discharge?</label>
+            <input type="radio" name="doctors" value="Not much"> Very satisfied 
+            <input type="radio" name="doctors" value="Extremely">Satisfied 
+            <input type="radio" name="doctors" value="Not much"> Neutral
+            <input type="radio" name="doctors" value="Not much">Dissatisfied
+        </div>
+        <div class="question">
+            <label for="comments">Any additional comment?</label>
+        
+        <textarea name="comments" rows="4"></textarea>
+
+        <button type="submit" onclick="location.href='submit.html'">Submit</button>
+    </div>
+
+</body>
+</html>

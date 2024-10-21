@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Survey</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(diet.jpg.jpg);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2fbde0;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Diet and Fitness</h1>
+
+        <div class="question">
+            <label for="hospital">1.How physically healthy you are?</label>
+            <input type="radio" name="hospital" value="Not at all healthy"> Not at all healthy
+            <input type="radio" name="hospital" value="Extremely Healthy"> Extremely Healthy 
+            <input type="radio" name="hospital" value="Extremely Healthy"> Extremely Healthy 
+            
+        </div>
+
+        <div class="question">
+            <label for="treatment">2.Do you take Nutritional suppliments? </label>
+            <input type="radio" name="Nutritional" value="Yes"> Yes
+            <input type="radio" name="Nutritional" value="No"> No
+           
+        </div>
+
+        <div class="question">
+            <label for="doctors">3.How important is Exercise to you?</label>
+            <input type="radio" name="Exercise" value="Not much"> Not Much
+            <input type="radio" name="Exercise" value="Extremely"> Extremely
+           
+        </div>
+
+        <div class="question">
+             <label for="comments">4.What do you most often do for Exercise?</label> 
+            <input type="radio" name="workout" value="Lift Weight"> Lift Weight
+            <input type="radio" name="workout" value="Dance"> Dance
+            <input type="radio" name="workout" value="Walk"> Walk
+            <input type="radio" name="workout" value="Run"> Run
+            <input type="radio" name="workout" value="Swim"> Swim
+            <input type="radio" name="workout" value="Play a team sport"> Play a team sport
+            
+        </div>
+        <div class="question">
+            <label for="doctors">5.What is your preferred method for staying Hydrated?</label>
+            <input type="radio" name="Hydrated" value="drinking Watre"> Drinking water
+            <input type="radio" name="Hydrated" value="herbal tea"> Herbal tea
+            <input type="radio" name="Hydrated" value="sports drinks"> Sports drinks
+            <input type="radio" name="Hydrated" value="Other"> Other
+           
+        </div>
+        <div class="question">
+            <label for="doctors">6.In a typical day,how many of your meals and snacks include Carbohydrates? </label>
+            <textarea name="comments" rows="2"></textarea>
+        </div>
+        <div class="question">
+            <label for="doctors">7.How would you describe your current diet?</label>
+            <input type="radio" name="diet" value="Mostly plant based"> Mostly plant based
+            <input type="radio" name="diet" value="Balanced with a mix of Protein,carbs and fats"> Balanced with a mix of Protein,carbs and fats
+            <input type="radio" name="diet" value="High in processed foods"> High in processed foods
+            <input type="radio" name="diet" value="Other"> Other
+         </div>
+        <div class="question">
+            <label for="doctors">8.What is your Primary Motivation for maintaining a healthy diet anfd fitness routine?</label>
+            <input type="radio" name="fitness" value="Weight loss"> Weight loss
+            <input type="radio" name="fitness" value="Improved overall health"> Improved overall health
+            <input type="radio" name="fitness" value="Increased Energy levels"> Increased Energy levels
+            <input type="radio" name="fitness" value="Stress management"> Stress management
+           
+        </div>
+        <div class="question">
+            <label for="doctors">9.How many hours of sleep do you typically get each night?</label>
+            <input type="radio" name="sleep" value=" 7-9 hours"> 7-9 hours
+            <input type="radio" name="sleep" value="5-6 hours"> 5-6 hours
+            <input type="radio" name="sleep" value="Less than 5hours"> Less than 5hours
+            <input type="radio" name="sleep" value="More than 9hours"> More than 9hours
+           
+        </div>
+        <div class="question">
+            <label for="doctors">10.How often do you indulge in sugary or high-fat snacks?</label>
+            <input type="radio" name="fats" value="Rarely "> Rarely 
+            <input type="radio" name="fats" value="Occasionally"> Occasionally
+            <input type="radio" name="fats" value="Frequently"> Frequently
+            <input type="radio" name="fats" value="Never"> Never
+           
+        </div>
+        <div class="question">
+           
+        <div class="textarea">
+            <textarea cols="20+" placeholder="Any Additional Comment?"></textarea>
+        </div>
+
+        <button type="submit" onclick="location.href='submit.html'">Submit</button>
+    </div>
+</body>
+</html>

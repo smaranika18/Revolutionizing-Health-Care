@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Survey</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://images.indianexpress.com/2021/02/mental-health-1200.jpg);
+            background-size: cover;
+            height: 100vh;
+            body {
+  height: 100vh;
+  width: 100%;
+  background: url(gradient.jpg)
+    center/cover no-repeat;
+}
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2fbde0;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mental Health</h1>
+
+        <div class="question">
+            <label for="hospital">1.overall how would you rate your Mental Health?</label>
+            <input type="radio" name="mental" value="Not at all healthy"> Not at all healthy
+            <input type="radio" name="mental" value="Extremely Healthy"> Extremely Healthy 
+            
+        </div>
+
+        <div class="question">
+            <label for="treatment">2.During the past two weeks,how often have you felt sad or dpressed? </label>
+            <input type="radio" name="depression" value="Extremely oftrn"> Extremely often
+            <input type="radio" name="depression" value="somewhat often"> Somewhat often
+            <input type="radio" name="depression" value="Not so often"> Not so often
+            <input type="radio" name="depression" value="Not at all"> not at all
+           
+        </div>
+
+        <div class="question">
+            <label for="doctors">3.During the past two weeks,how often has your mental health interfered with your personal relationships?</label>
+            <input type="radio" name="personal" value="Extremely oftrn"> Extremely often
+            <input type="radio" name="personal" value="somewhat often"> Somewhat often
+            <input type="radio" name="personal" value="Not so often"> Not so often
+            <input type="radio" name="personal" value="Not at all"> not at all
+           
+        </div>
+
+        <div class="question">
+             <label for="comments">4.How often do you engage in activities that help you relax?</label> 
+            <input type="radio" name="relax" value="Extremely"> Daily
+            <input type="radio" name="relax" value="Not much"> 3-4 times a week
+            <input type="radio" name="relax" value="Extremely"> 1-2times a week
+            <input type="radio" name="relax" value="Not much"> Rarely or naver
+            
+        </div>
+        <div class="question">
+            <label for="doctors">5.Have you ever sought professional help for your mental health?</label>
+            <input type="radio" name="help" value="Not much"> Yes,currently
+            <input type="radio" name="help" value="Extremely"> Yes,in the past
+            <input type="radio" name="help" value="Extremely"> No but considering
+            <input type="radio" name="help" value="Other"> Nver
+           
+        </div>
+     <div class="question">
+        <label for="doctors">6.Which coping mechanism do you find most effective in managing stress? </label>
+        <input type="radio" name="mechanism" value="Exercise"> Exercise
+        <input type="radio" name="mechanism" value="Meditation"> Meditation
+        <input type="radio" name="mechanism" value="Talking to friends"> Talking to friends
+        <input type="radio" name="mechanism" value="Hobbies or creativity activities"> Hobbies or creativity activities
+     </div>
+    <div class="question">
+        <label for="doctors">7.How would you describe your sleep quality?</label>
+        <input type="radio" name="Sleeping" value="Excellent"> Excellent
+        <input type="radio" name="Sleeping" value="Good"> Good
+        <input type="radio" name="Sleeping" value="Fair"> Fair
+        <input type="radio" name="Sleeping" value="Poor"> Poor
+     </div>
+    <div class="question">
+        <label for="doctors">8.Do you experience symptoms of anxiety or depression?</label>
+        <input type="radio" name="Health" value="Yes,frequently"> YES,frequently
+        <input type="radio" name="Health" value="Occasionally"> Occasionally
+        <input type="radio" name="Health" value="Rarely"> Rarely
+        <input type="radio" name="Health" value="Never"> Never
+       
+    </div>
+    <div class="question">
+        <label for="doctors">9.How comfortable do you feel discussing your mental health with others?</label>
+        <input type="radio" name="Mental health" value="Very Comfortable"> Very comfortable
+        <input type="radio" name="Mental health" value="Somewhat Comfortable"> Somewhat comfortable
+        <input type="radio" name="mental health" value="Not at all comfortable"> Not all comfortable
+       
+    </div>
+    <div class="question">
+        <label for="doctors">10.How would you rate your ability to handle life's challengs and setbacks?</label>
+        <input type="radio" name="Life" value="Very Well"> Very well
+        <input type="radio" name="Life" value="Moderately Well"> Moderatly well
+        <input type="radio" name="Life" value="Not very well"> Not very well
+        <input type="radio" name="Life" value="Poorly"> Poorly
+       
+    </div>
+        <div class="question">
+            
+            <div class="textarea">
+                <textarea cols="20+" placeholder="Any Additional Comment?"></textarea>
+            </div>
+       
+
+        <button type="submit" onclick="location.href='submit.html'">Submit</button>
+    </div>
+
+</body>
+</html>

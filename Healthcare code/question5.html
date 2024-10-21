@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Survey</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.ft5kDz3ceio7CqGBb1pJbgHaEK&pid=Api&P=0&h=180);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2fbde0;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Health Insurance</h1>
+
+        <div class="question">
+            <label for="hospital">1.Do you currently have health insurance?</label>
+            <input type="radio" name="hospital" value="Yes, through my employer ">Yes, through my employer 
+            <input type="radio" name="hospital" value=" Yes, through a government program">  Yes, through a government program (e.g., Medicaid, Medicare)
+            <br>
+            <input type="radio" name="hospital" value="Yes, through a private plan "> Yes, through a private plan 
+            <input type="radio" name="hospital" value="No, I dont have health insurance"> No, I don't have health insurance
+            
+        </div>
+
+        <div class="question">
+            <label for="treatment">2.How satisfied are you with your current health insurance plan? </label>
+            <input type="radio" name="treatment" value=" Very satisfied"> Very satisfied
+            <input type="radio" name="treatment" value="Somewhat satisfied">  Somewhat satisfied
+            <input type="radio" name="treatment" value=" Neutral "> Neutral 
+            <input type="radio" name="treatment" value="Dissatisfied ">  Dissatisfied 
+        </div>
+
+        <div class="question">
+            <label for="doctors">3.What type of health insurance plan do you have?</label>
+            <input type="radio" name="health" value="HMO"> HMO (Health Maintenance Organization)
+            <input type="radio" name="health" value="PPO"> PPO (Preferred Provider Organization)
+            <br>
+            <input type="radio" name="health" value="POS"> POS (Point of Service)
+            <input type="radio" name="health" value="High Deductible">High Deductible Health Plan (HDHP)
+            <input type="radio" name="health" value="Other  "> Other  
+        </div>
+
+        <div class="question">
+             <label for="comments">4.How well do you understand the coverage provided by your health insurance plan?</label> 
+            <input type="radio" name="Insurance" value=" Very well">  Very well
+            <input type="radio" name="Insurance" value="Somewhat well"> Somewhat well
+            <input type="radio" name="Insurance" value="Not very well"> Not very well
+            <input type="radio" name="Insurance" value="Not at all"> Not at all
+        </div>
+        <div class="question">
+            <label for="doctors">5.Have you ever faced challenges affording the cost of your health insurance?</label>
+            <input type="radio" name="challenge" value="Yes, regularly  "> Yes, regularly  
+            <input type="radio" name="challenge" value=" Occasionally "> Occasionally 
+            <input type="radio" name="challenge" value="Rarely"> Rarely
+            <input type="radio" name="challenge" value="Never "> Never 
+        </div>
+        <div class="question">
+            <label for="doctors">6.What health services do you consider most important for coverage in your health insurance plan? </label>
+            <input type="radio" name="services" value="Preventive care "> Preventive care 
+            <input type="radio" name="services" value=" Prescription drugs"> Prescription drugs
+            <input type="radio" name="services" value="Specialist visits"> Specialist visits
+            <input type="radio" name="services" value="Emergency care"> Emergency care
+        </div>
+        <div class="question">
+            <label for="doctors">7.Have you compared your current health insurance plan with other available options in the past year?</label>
+            <input type="radio" name="compare" value="Yes, and I switched plans"> Yes, and I switched plans
+            <input type="radio" name="compare" value="Yes, but I stayed with my current plan "> Yes, but I stayed with my current plan  
+            <input type="radio" name="compare" value="No, I have not compared plans">No, I have not compared plans
+         </div>
+        <div class="question">
+            <label for="doctors">8.How aware are you of the additional benefits (e.g., wellness programs, telehealth services) offered by your health insurance plan?</label>
+            <input type="radio" name="aware" value="Very aware">Very aware
+            <input type="radio" name="aware" value=" Somewhat aware"> Somewhat aware
+            <input type="radio" name="aware" value="Not very aware"> Not very aware
+            <input type="radio" name="aware" value="Not at all aware">Not at all aware
+        <div class="question">
+            <label for="doctors">9.When considering health insurance in the future, what factors would be most important to you?</label>
+            <input type="radio" name="future" value="cost "> cost 
+            <input type="radio" name="future" value="Coverage options"> Coverage options
+            <input type="radio" name="future" value=" Network of healthcare providers ">  Network of healthcare providers  
+            <input type="radio" name="future" value="Additional benefits"> Additional benefits
+            <input type="radio" name="future" value="Customer service ">Customer service 
+        </div>
+        <div class="question">
+            <label for="doctors">10.How satisfied are you with the availability and accessibility of healthcare providers within your health insurance network?</label>
+            <input type="radio" name="Network" value="Very satisfied"> Very satisfied
+            <input type="radio" name="Network" value="Somewhat satisfied"> Somewhat satisfied
+            <input type="radio" name="Network" value="Neutral"> Neutral 
+            <input type="radio" name="Network" value="Dissatisfied"> Dissatisfied
+        </div>
+        <div class="question">
+            <label for="comments">Any additional comment?</label>
+        
+        <textarea name="comments" rows="4"></textarea>
+
+        <button type="submit" onclick="location.href='submit.html'">Submit</button>
+    </div>
+
+</body>
+</html>

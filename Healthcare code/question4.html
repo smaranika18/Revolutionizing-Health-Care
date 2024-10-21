@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Survey</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://www.gannett-cdn.com/presto/2021/01/27/USAT/7a59c7f7-045e-4199-b948-2f0d56b2e5ff-VPC_COVID_VARIANTS_DESK_THUMB.jpg?crop=1911,1075,x0,y0&width=1911&height=1075&format=pjpg&auto=webp);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2fbde0;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Covid-19</h1>
+
+        <div class="question">
+            <label for="hospital">1.Have you or anyone in your household been diagnosed with COVID-19?</label>
+            <input type="radio" name="hospital" value="Not at all healthy"> Yes
+            <input type="radio" name="hospital" value="Extremely Healthy"> No
+            
+        </div>
+
+        <div class="question">
+            <label for="treatment">2. Have you received the COVID-19 vaccine? </label>
+            <input type="radio" name="treatment" value="Extremely oftrn"> Yes, fully vaccinated
+            <input type="radio" name="treatment" value="somewhat often"> Yes, partially vaccinated
+            <input type="radio" name="treatment" value="Not so often"> No, not vaccinated
+        </div>
+
+        <div class="question">
+            <label for="doctors">3. Have you experienced any COVID-19 symptoms in the past 6 months?</label>
+            <input type="radio" name="treatment" value="Extremely oftrn">Yes
+            <input type="radio" name="treatment" value="somewhat often"> No   
+        </div>
+
+        <div class="question">
+             <label for="comments">4.Which preventive measures do you regularly practice to avoid COVID-19?</label> 
+            <input type="radio" name="doctors" value="Extremely"> Wearing masks
+            <input type="radio" name="doctors" value="Not much"> Social distancing
+            <input type="radio" name="doctors" value="Extremely"> Hand hygiene
+            <input type="radio" name="doctors" value="Not much"> None of the above    
+        </div>
+        <div class="question">
+            <label for="doctors">5.How has COVID-19 impacted your daily life?</label>
+            <input type="radio" name="doctors" value="Not much">  Significantly
+            <input type="radio" name="doctors" value="Extremely"> Moderately
+            <input type="radio" name="doctors" value="Extremely"> Slightly
+            <input type="radio" name="doctors" value="Other"> Not at all
+        </div>
+        <div class="question">
+            <label for="doctors">6. Where do you primarily get information about COVID-19? </label>
+            <input type="radio" name="doctors" value="Not much">  Government health websites
+            <input type="radio" name="doctors" value="Extremely"> News media
+            <input type="radio" name="doctors" value="Extremely"> Social media
+            <input type="radio" name="doctors" value="Other"> Healthcare professionals
+           
+        </div>
+        <div class="question">
+            <label for="doctors">7. Have you been working or studying remotely due to COVID-19?</label>
+            <input type="radio" name="doctors" value="Not much"> Yes
+            <input type="radio" name="doctors" value="Extremely"> No  
+           
+         </div>
+        <div class="question">
+            <label for="doctors">8. Has COVID-19 affected your financial situation?</label>
+            <input type="radio" name="doctors" value="Not much"> Yes, negatively 
+            <input type="radio" name="doctors" value="Extremely"> Yes, positively 
+            <input type="radio" name="doctors" value="Not much"> No impact 
+        </div>
+        <div class="question">
+            <label for="doctors">9.If you haven't been vaccinated, do you plan to get vaccinated in the future?</label>
+            <input type="radio" name="doctors" value="Not much">  Yes, in the near future
+            <input type="radio" name="doctors" value="Extremely"> Yes, but not sure when
+            <input type="radio" name="doctors" value="Not much"> No, not planning to get vaccinated   
+        </div>
+        <div class="question">
+            <label for="doctors">10.Have you altered your travel plans due to COVID-19?</label>
+            <input type="radio" name="doctors" value="Not much"> Yes, I have canceled or postponed travel
+            <input type="radio" name="doctors" value="Extremely"> Yes, I have changed my destination or mode of transportation
+            <input type="radio" name="doctors" value="Not much"> No, I have not changed my travel plans
+        </div>
+        <div class="question">
+            <label for="comments">Any additional comment?</label>
+        
+        <textarea name="comments" rows="4"></textarea>
+
+        <button type="submit" onclick="location.href='submit.html'">Submit</button>
+    </div>
+
+</body>
+</html>

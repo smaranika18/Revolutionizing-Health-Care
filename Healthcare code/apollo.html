@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2f67ec;
+}
+
+body {
+  font-family: "Euclid Circular A", "Poppins";
+  background-image: url(gradient.jpg);
+  color:white;
+  margin: 0;
+  height: 94vh;
+  display: grid;
+  place-items: center;
+}
+nav {
+  position: relative;
+  background: #1f2635;
+  font-weight: 1000;
+  font-size: xx-large;
+  display: flex;
+  width: 80%;
+  padding: 0px 0;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav .item {
+  font-size: large;
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 25%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.dropdown {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 62px;
+}
+.dropdown > div {
+  transform: translate(0, -100%);
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: var(--color-primary);
+}
+
+.dropdown a:hover {
+  background: #254fb5;
+}
+
+.underline {
+  height: 6px;
+  background: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
+  transition: 0.35s;
+}
+
+nav .item:hover > .dropdown > div {
+  transform: translate(0);
+}
+
+nav .item:nth-child(1):hover ~ .underline {
+  transform: translate(0, 0);
+}
+
+nav .item:nth-child(2):hover ~ .underline {
+  transform: translate(100%, 0);
+}
+
+nav .item:nth-child(3):hover ~ .underline {
+  transform: translate(200%, 0);
+}
+
+nav .item:nth-child(4):hover ~ .underline {
+  transform: translate(300%, 0);
+}
+.container {
+    resize:horizontal;  
+     overflow: auto; 
+     height: auto; 
+     width: 50%; 
+     padding: 10px; 
+     border-radius: 20px; 
+     background-color: #eeeeee; 
+     display: grid; 
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+     gap: 20px; 
+     justify-items: center;  
+            
+   }
+.container img{
+    max-width: 100%;
+    margin: 10px;
+}
+
+
+.rating{
+    position: relative;
+    left: 10%;
+    transform: translate(-50%, -50%)rotateY(180deg);
+    display: flex;
+
+}
+.rating input{
+    display: none;
+    
+}
+.rating label{
+    
+    cursor: pointer;
+    width: 50px;
+    /* background: #ccc; */
+   
+}
+.rating label:before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #101010;
+
+}
+.rating label:after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: rgb(0, 195, 255);
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(149, 30, 30, 0.5);
+   
+}
+.rating label:hover::after,
+.rating label:hover~label::after,
+.rating input:checked~label::after{
+    opacity: 1;
+    /* rotate: 70deg; */
+}
+.textarea
+{
+margin: 10px;
+   position: relative;
+   top: 50px;
+   right: 240px;
+}
+.btn{
+    position: relative;
+    top: 46px;
+    right: 230px;
+}
+header{
+    position: relative;
+    top: 50px;
+    right: 192px;
+    text-align: center;
+}
+#star5:checked~form header::before{
+    content: "I hate it";
+}
+#star4:checked~form header::before{
+    content: "I dont like it";
+}
+#star3:checked~form header::before{
+    content: "Good";
+}
+#star2:checked~form header::before{
+    content: "Awesome";
+}
+#star1:checked~form header::before{
+    content: "Excellent";
+}
+form header{
+    width: 100%;
+    font-size: 25px;
+    color:rgb(0, 195, 255);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    transform: translate(0,0) rotateY(180deg);
+}
+
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+    
+}
+form .btn button{
+    height: 30px;
+    width: 200px;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    transform: all 0.2s ease;
+    text-transform: uppercase;;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    transform: translate(0,0) rotateY(180deg);
+}
+form .btn button:hover{
+    background: #1b1b1b;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: navy;">Apollo clinic</h1>
+    <p style="color: navy; font-size: large;">Bhaba Nagar,Berhampur,Odisha 760004 <br>
+      Opens-9.30 
+      Closes-5.00
+    </p>
+    
+        <nav>
+      <a class="item">Directions</a>
+      <div class="item">
+        About
+        <div class="dropdown">
+          <div>
+            <a href="query.html">Questions about us</a>
+            <a>About us</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        Services
+        <div class="dropdown">
+          <div>
+            <a>Emergency Department (ED)</a>
+            <a>Radiology and Imaging</a>
+            <a>Surgery Department</a>
+            <a>Gynaecology</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        Available Doctors
+        <div class="dropdown">
+          <div>
+            <a>Dr.Ashutosh Mohapatro</a>
+            <a>Dr.Antaryami Sahu</a>
+            <a>Dr.Ravi Satapathy</a>
+            <a>Dr.Anjali Satapathy</a>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div class="underline"></div>
+    </nav> <br> 
+    <div class="container">
+        <img src="apollo2.jpg" alt="">
+        <img src="apollo3.jpg" alt="">
+        <img src="https://www.apolloclinic.com/assets/images/clinics/7230_Annanagar.JPG" alt="">
+        <img src="apollo5.jpg" alt="">
+        <img src="apollo6.jpg" alt="">
+    </div><br> 
+    <ul>
+    <a href="" style="background-color: white;font-size: x-large;
+     color: #1f2635;">Reviews </a>
+    <a href="" style="background-color: white;font-size: x-large;
+    color: #1f2635;">Updates </a>
+    <a href="" style="background-color: white;font-size: x-large;
+    color: #1f2635;">Contact Us</a>
+    </ul>
+    <br>
+    <br>
+    <div class="rating">
+      <input type="radio" name="star" id="star1"><label for="star1"></label>
+      <input type="radio" name="star" id="star2"><label for="star2"></label>
+      <input type="radio" name="star" id="star3"><label for="star3"></label>
+      <input type="radio" name="star" id="star4"><label for="star4"></label>
+      <input type="radio" name="star" id="star5"><label for="star5"></label>
+  <form action="#">
+          <header></header>
+          
+          <div class="btn">
+            <button type="submit" onclick="location.href='rating.html'">Submit</button>
+          </div>
+      </form>
+
+   </body> 
+    
+</body>
+</html>

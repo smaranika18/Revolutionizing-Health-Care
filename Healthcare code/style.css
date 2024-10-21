@@ -1,0 +1,38 @@
+*{
+    font-family:Cambria;
+    padding: 0;
+    margin: 0;
+    text: 25px;
+}
+
+ .Heading{ 
+      color: chocolate; 
+ } 
+#navbar{
+    background-color: black;
+    height: 60px;
+    color: white;
+}
+#logo{
+    color: #f08804;
+}
+button{
+    background-color: #f08804;
+}
+a{
+    margin-right: 200px;
+}
+.ContentBox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+#content{
+    height: 620px;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+}

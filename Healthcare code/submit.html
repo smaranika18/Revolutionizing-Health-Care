@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Toast Notification 01</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet">
+            
+        <link rel="stylesheet" href="style.css">
+        <style>
+            :root {
+    --notification-background: #2c3c3e;
+    --notification-primary: #8ae7ec;
+    --background: #FAF9FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    justify-content: center;
+    background-image: url(gradient.jpg);
+    font-size: x-large;
+}
+
+.notification {
+    position: absolute;
+    width: max-content;
+    left: 0; 
+    right: 0; 
+    bottom: 300px;
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 6px;
+    background-color: var(
+        --notification-background);
+    color: var(--notification-primary);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade-in 3s linear;
+}
+
+.notification__icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 4px;
+}
+
+.notification__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 8px;
+}
+
+.notification__progress {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    width: calc(100% - 8px);
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: linear-gradient(
+        to right, 
+        var(--notification-background),  
+        var(--notification-primary)
+    );
+    border-radius: inherit;
+    animation: progress 2.5s 0.5s linear;
+}
+
+@keyframes fade-in {
+    10% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    95% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes progress {
+    to {
+        transform: scaleX(1);
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="notification">
+            <div class="notification__body">
+                <img
+                    src="button.jpg"
+                    alt="Success"
+                    class="notification__icon">
+                Your Survey submitted Successfully! &#128640; 
+            </div>
+            <div class="notification__progress"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+div{
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    color: black;
+    background-image: url(artwork.jpg.jpg);
+    text-align: center;
+    position: fixed;
+    margin-right: auto;
+}
